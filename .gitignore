@@ -1,0 +1,7 @@
+# Terraform local files
+.terraform/
+.terraform.lock.hcl
+
+# OS / editor noise
+*.log
+*.tmp
