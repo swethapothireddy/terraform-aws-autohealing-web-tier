@@ -84,6 +84,9 @@ ________________________________________
 •	ECS or Fargate
 •	CI/CD pipeline
 ________________________________________
+## Cloud Provider Choice
+AWS was chosen for this assessment due to its mature Auto Scaling and Load Balancing services, which make it straightforward to demonstrate self-healing and N+1 availability. The solution uses an Application Load Balancer and Auto Scaling Group to provide a resilient web tier using Infrastructure as Code.
+________________________________________
 ## Author :
 Swetha Pothireddy
 
