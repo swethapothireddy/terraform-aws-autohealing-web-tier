@@ -1,19 +1,39 @@
+########################################
+# AWS Region
+########################################
 variable "aws_region" {
-  default = "ap-southeast-2"
+  description = "AWS region where the infrastructure will be planned"
+  default     = "ap-southeast-2"
 }
 
+########################################
+# EC2 Instance Type
+########################################
 variable "instance_type" {
-  default = "t3.micro"
+  description = "EC2 instance type for web servers"
+  default     = "t3.micro"
 }
 
+########################################
+# Auto Scaling Group Desired Capacity
+########################################
 variable "desired_capacity" {
-  default = 2
+  description = "Number of EC2 instances to run normally"
+  default     = 2
 }
 
+########################################
+# Auto Scaling Group Minimum Size
+########################################
 variable "min_size" {
-  default = 2
+  description = "Minimum number of EC2 instances (ensures N+1 availability)"
+  default     = 2
 }
 
+########################################
+# Auto Scaling Group Maximum Size
+########################################
 variable "max_size" {
-  default = 3
+  description = "Maximum number of EC2 instances allowed"
+  default     = 3
 }
