@@ -4,7 +4,7 @@ This repository contains Terraform code to provision an auto-healing, highly ava
 The solution ensures that the failure or termination of any single EC2 instance does not cause downtime.
 The infrastructure is fully defined using Infrastructure as Code (IaC) and validated using Terraform plan.
 ________________________________________
-## Why AWS?
+## Cloud Platform Choice - AWS 
 AWS was chosen for this solution because it provides:
 •	Native Auto Scaling Group (ASG) support for self-healing
 •	Application Load Balancer (ALB) for traffic distribution and health checks
