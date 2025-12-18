@@ -1,5 +1,5 @@
-**Auto-Healing Web Tier on AWS using Terraform** 
-## Overview :
+**🚀Auto-Healing Web Tier on AWS using Terraform** 
+## 📘Overview :
 This repository contains Terraform code to provision an auto-healing, highly available web tier on Amazon Web Services (AWS).
 The solution ensures that the failure or termination of any single EC2 instance does not cause downtime.
 The infrastructure is fully defined using Infrastructure as Code (IaC) and validated using Terraform plan.
