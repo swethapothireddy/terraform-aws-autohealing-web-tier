@@ -60,8 +60,8 @@ ________________________________________
 3.	The Target Group routes requests to healthy EC2 instances
 4.	EC2 instances serve the NGINX page using Docker
 5.	If an instance fails:
-o	The Load Balancer stops routing traffic to it
-o	The Auto Scaling Group launches a replacement instance
+	      The Load Balancer stops routing traffic to it
+  	    The Auto Scaling Group launches a replacement instance
 This ensures zero downtime.
 ________________________________________
 ## Assumptions :
@@ -69,13 +69,18 @@ ________________________________________
 •	Default VPC is used for simplicity
 •	HTTP traffic only (HTTPS can be added as an enhancement)
 •	Public container registry access is available
+• Default AWS VPC and subnets are used.
+• No HTTPS or custom domain is configured.
+• Auto Scaling Group runs a minimum of two EC2 instances.
+• The solution is designed for demonstration and assessment purposes only.
 ________________________________________
 ## Estimated Monthly Cost (AUD) :
 Resource	Estimated Cost
-2 × EC2 (t3.micro)	~AUD 12
+2 × EC2 (t3.micro)	~AUD 12 (or) 2 × t3.micro EC2 instances: ~AUD 15
 Application Load Balancer	~AUD 6
 Data Transfer	~AUD 1–2
 Total	~AUD 18–20
+Estimated total: **~AUD 20 per month**
 ________________________________________
 ## Time Spent :
 The solution was completed within the requested 7–8 focused hours, including design, Terraform implementation, containerisation, and documentation.
