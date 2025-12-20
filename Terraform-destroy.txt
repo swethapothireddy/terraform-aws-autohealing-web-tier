@@ -1,0 +1,20 @@
+PS C:\Users\pothi\terraform-aws-autohealing-web-tier> terraform destroy
+
+Plan: 0 to add, 0 to change, 6 to destroy.
+
+Changes to Outputs:
+  - alb_dns_name = "web-alb-1367827514.ap-southeast-2.elb.amazonaws.com" -> null
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_autoscaling_group.asg: Destroying... [id=terraform-20251220170837324600000003]
+aws_autoscaling_group.asg: Still destroying... [id=terraform-20251220170837324600000003, 00m10s elapsed]
+aws_autoscaling_group.asg: Still destroying... [id=terraform-20251220170837324600000003, 00m20s elapsed]
+aws_autoscaling_group.asg: Still destroying... [id=terraform-20251220170837324600000003, 00m30s elapsed]
+aws_autoscaling_group.asg: Still destroying... [id=terraform-20251220170837324600000003, 00m40s elapsed]
+aws_autoscaling_group.asg: Still destroying... [id=terraform-20251220170837324600000003, 00m50s elapsed]
+aws_autoscaling_group.asg: Still destroying... [id=terraform-20251220170837324600000003, 01m00s elapsed]
