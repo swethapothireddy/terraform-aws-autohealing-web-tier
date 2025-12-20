@@ -1,5 +1,14 @@
 PS C:\Users\pothi\terraform-aws-autohealing-web-tier> terraform apply
 
+Plan: 6 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + alb_dns_name = (known after apply)
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
 Do you want to perform these actions?
   Terraform will perform the actions described above.
   Only 'yes' will be accepted to approve.
@@ -48,5 +57,6 @@ aws_autoscaling_group.asg: Creation complete after 1m20s [id=terraform-202512201
 Apply complete! Resources: 6 added, 0 changed, 0 destroyed.
 
 Outputs:
+
 
 alb_dns_name = "web-alb-1367827514.ap-southeast-2.elb.amazonaws.com"
